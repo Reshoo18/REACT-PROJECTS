@@ -25,12 +25,14 @@ function App() {
     setMode('dark')
     document.body.style.backgroundColor='#042743'
     showAlert("Dark mode has been enabled","success")
+    document.title='TextUtils - Dark Mode';
 
   }
   else{
     setMode('light')
     document.body.style.backgroundColor='white'
     showAlert("light mode has been enabled","success")
+     document.title='TextUtils - Dark Mode';
 
   }
   }
@@ -46,5 +48,5 @@ function App() {
     </>
   );
 }
-    
+     
 export default App;
