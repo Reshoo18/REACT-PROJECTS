@@ -1,5 +1,3 @@
-
-
 import './App.css';
 import About from './Components/About';
 import Navbar from './Components/Navbar';
@@ -31,14 +29,14 @@ function App() {
     setMode('dark')
     document.body.style.backgroundColor='#042743'
     showAlert("Dark mode has been enabled","success")
-    document.title='TextUtils - Dark Mode';
+    // document.title='TextUtils - Dark Mode';
 
   }
   else{
     setMode('light')
     document.body.style.backgroundColor='white'
     showAlert("light mode has been enabled","success")
-     document.title='TextUtils - Dark Mode';
+    //  document.title='TextUtils - Dark Mode';
 
   }
   }
@@ -51,10 +49,10 @@ function App() {
     
   <Switch>
           <Route path="/about">
-            <About />
+            <About mode={mode} />
           </Route>
           <Route path="/">
-          <TextForm showAlert={showAlert}heading ="Enter The Text To Analyze" mode={mode}/>
+          <TextForm showAlert={showAlert}heading ="Try TextUtils-Word Counter, Character Counter , Remove Extra Spaces" mode={mode}/>
           </Route>
         </Switch>
       </div>
