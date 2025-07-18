@@ -64,11 +64,4 @@ function App() {
 }
      
 export default App;
-
-// new changes   
- //final changes here
- // all is done
- //done
- // correct
- // what
- // hua
+// new changes
